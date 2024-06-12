@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciante em HTML</title>
+</head>
+<body>
+    <h2>Indice</h2>
+    <lu>
+        <li><a href="#introducao">Introdução ao HTML para Iniciantes</a></li>
+        <li><a href="#tags">Principais Tags HTML</a></li>
+        <li><a href="#entendendo">Entendendo Client x Server</a></li>
+        <li><a href="#clienteservidor">Como Funciona a Comunicação Cliente-Servidor</a></li>
+    </lu>
+
+    <hr/>
+
+    <h1 id="#introducao">Introdução ao HTML para Iniciantes</h1>
+    <p>Bem-vindo ao nosso guia de HTML para iniciantes! HTML, que significa HyperText Markup Language, é a linguagem padrão usada para criar páginas da web. Com HTML, você pode estruturar o conteúdo da sua página e adicionar elementos como texto, imagens, links e muito mais. Neste guia, você aprenderá o básico do HTML e entenderá como usar as tags mais comuns para construir suas próprias páginas web.</p>
+
+    <h1 id="tags">Principais Tags HTML</h1>
+    <h3>- Tag html</h3>
+    <p>A tag <html> é a raiz de um documento HTML. Ela envolve todo o conteúdo da sua página web e indica ao navegador que este é um documento HTML.</p>
+    
+    <h3>- Tag head</h3>
+    <p>A tag `head` contém metadados sobre o documento, como o título da página, links para arquivos CSS, scripts, e outras informações que não são exibidas diretamente na página.</p>
+
+    <h3>- Tag Title</h3>
+    <p>A tag `title` é uma das tags mais importantes no HTML, pois define o título da página que aparece na aba do navegador e nos resultados dos mecanismos de busca. Ela deve ser usada dentro da tag head de um documento HTML.</p>
+
+    <h3>- Tag body</h3>
+    <p>A tag body contém todo o conteúdo visível da página, como textos, imagens, vídeos, etc.</p>
+
+    <h3>- Tag H1 até H6</h3>
+    <p>Essas tags são usadas para definir cabeçalhos, com h1 sendo o nível mais alto (geralmente usado para o título principal da página) e h6 o nível mais baixo.</p>
+
+    <h3>- Tag p</h3>
+    <p>A tag p é usada para definir parágrafos.</p>
+
+    <h3>- Tag li</h3>
+    <p>A tag li é usada para definir um item em uma lista. Ela deve estar contida dentro de uma lista ordenada (ol) ou não ordenada (ul).</p>
+
+    <h3>- Tag ul</h3>
+    <p>A tag ul define uma lista não ordenada, geralmente exibida com marcadores.</p>
+
+    <h3>- Tag small</h3>
+    <p>A tag small é usada para mostrar texto menor que o texto padrão.</p>
+
+    <h3>- Tag img</h3>
+    <p>A tag img é usada para incorporar imagens no seu documento HTML. É necessário o atributo src para definir o caminho da imagem e o alt para fornecer um texto alternativo.</p>
+
+    <h1>Entendendo Client x Server</h1>
+    <p>Na web, a comunicação entre o cliente e o servidor é fundamental para a operação de sites e aplicativos online. Vamos entender melhor como essa relação funciona.</p>
+
+    <h3 id="entendendo">- Client (Cliente)</h3>
+    <p>O cliente é geralmente o navegador web do usuário, como Google Chrome, Firefox, Safari, ou Edge. O cliente é responsável por enviar solicitações ao servidor e exibir as respostas recebidas. Aqui estão algumas características do cliente:</p>
+    <ul>
+        <li><b>Solicita Páginas e Recursos:</b> Quando você digita um URL no navegador ou clica em um link, o cliente envia uma solicitação ao servidor para carregar a página web correspondente.</li>
+        <li><b>Renderiza Páginas Web:</b> O cliente interpreta o código HTML, CSS e JavaScript recebido do servidor e exibe a página web ao usuário.</li>
+        <li><b>Interatividade:</b> O cliente permite a interação com a página web, como cliques, preenchimento de formulários, e envio de dados ao servidor.</li>
+    </ul>
+
+    <h3 id="clienteservidor">- Server (Servidor)</h3>
+    <p>O servidor é um computador ou um sistema de computadores que hospeda páginas web e aplicativos. Ele processa as solicitações recebidas dos clientes e envia de volta os recursos solicitados. Aqui estão algumas características do servidor:</p>
+    <ul>
+        <li><b>Armazena e Fornece Recursos:</b> O servidor armazena páginas HTML, arquivos CSS, scripts JavaScript, imagens e outros recursos necessários para construir uma página web.</li>
+        <li><b>Processamento de Dados:</b> O servidor pode processar dados enviados pelos clientes, como informações de formulários, consultas de banco de dados, e lógica de aplicação.</li>
+        <li><b>Segurança e Autenticação:</b> O servidor gerencia a segurança dos dados e pode exigir autenticação para acessar determinados recursos.</li>
+    </ul>
+
+    <h1>Como Funciona a Comunicação Cliente-Servidor</h1>
+    <p>A comunicação entre cliente e servidor segue um ciclo de solicitações e respostas:</p>
+    <ol>
+        <li><b>Solicitação (Request):</b> O cliente envia uma solicitação HTTP ao servidor, especificando o recurso desejado (como uma página HTML).</li>
+        <li><b>Processamento:</b> O servidor recebe a solicitação, processa-a e prepara a resposta. Isso pode envolver a execução de scripts, consultas a bancos de dados e montagem da página HTML.</li>
+        <li><b>Resposta (Response):</b> O servidor envia de volta a resposta HTTP ao cliente, que inclui o recurso solicitado ou uma mensagem de erro.</li>
+        <li><b>Renderização:</b> O cliente recebe a resposta e renderiza o conteúdo na tela do usuário.</li>
+    </ol>
+
+    <h3>Exemplo Prático</h3>
+    <p>Imagine que você deseja acessar um site de notícias:</p>
+    <ol>
+        <li>Você digita o URL do site no seu navegador (cliente).</li>
+        <li>O navegador envia uma solicitação ao servidor do site pedindo a página inicial.</li>
+        <li>O servidor do site recebe a solicitação, processa-a (talvez consultando um banco de dados para os artigos mais recentes) e envia de volta a página HTML.</li>
+        <li>O navegador recebe a página HTML, carrega os recursos adicionais (como CSS e imagens), e exibe a página completa para você.</li>
+    </ol>
+    <p>Essa comunicação constante entre cliente e servidor é o que permite a interatividade e a funcionalidade dos sites que usamos diariamente.</p>
+
+    <footer><small>DESAFIO DIO - FORMAÇÃO HTML WEB DEVELOPER <a href="https://web.dio.me/track/formacao-html-web-developer">.</a></small> <small>CODED BY: <a href="https://www.linkedin.com/in/jadepaulolima/">JADE DE PAULO</a></small>®️ <a></a></footer>
+</body>
+</html>
